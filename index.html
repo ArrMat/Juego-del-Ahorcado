@@ -14,24 +14,34 @@
                 <button>Iniciar Juego</button>
                 <button>Agregar nueva palabra</button>
             </section>
+
             <section class="juego">
-                <div class="imagen-ahorcado"></div>
+                <div class="imagen-ahorcado">
+                    <canvas id="canvas-ahorcado"></canvas>
+                </div>
+
                 <div class="palabra-secreta"></div>
+
                 <div class="letras-incorrectas">
                     <textarea readonly></textarea>
                 </div>
+
                 <div class="botones">
                     <button>Nuevo Juego</button>
                     <button>Desistir</button>
                 </div>
+
             </section>
+
             <section class="agregar-palabra">
                 <input type="text">
                 <div class="botones">
-                    <button>Guardar</button>
+                    <button type="submit">Guardar</button>
                     <button>Cancelar</button>
                 </div>
             </section>
+
         </main>
     </body>
+    <script src="script.js"></script>
 </html>
