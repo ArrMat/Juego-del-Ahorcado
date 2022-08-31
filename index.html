@@ -3,21 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>El Ahorcado</title>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>a</h1>
+            <h1><img src="imagenes/logo_alura.png" alt="logo_alura"></h1>
         </header>
         <main>
             <section class="inicio">
-                <button>Iniciar Juego</button>
-                <button>Agregar nueva palabra</button>
+                <button class="inicio__button_azul button_azul">Iniciar Juego</button>
+                <button class="inicio__button_transparente button_transparente">Agregar nueva palabra</button>
             </section>
 
             <section class="juego">
                 <div class="imagen-ahorcado">
-                    <canvas id="canvas-ahorcado"></canvas>
+                    <div id="stick-vertical"></div>
+                    <div id="stick-horizontal"></div>
+                    <div id="rope"></div>
+                    <div id="head"></div>
+                    <div id="arm-left"></div>
+                    <div id="arm-right"></div>
+                    <div id="body"></div>
+                    <div id="leg-left"></div>
+                    <div id="leg-right"></div>
                 </div>
 
                 <div class="palabra-secreta"></div>
@@ -27,8 +36,8 @@
                 </div>
 
                 <div class="botones">
-                    <button>Nuevo Juego</button>
-                    <button>Desistir</button>
+                    <button class="button_azul">Nuevo Juego</button>
+                    <button class="button_transparente">Desistir</button>
                 </div>
 
             </section>
@@ -36,8 +45,8 @@
             <section class="agregar-palabra">
                 <input type="text">
                 <div class="botones">
-                    <button type="submit">Guardar</button>
-                    <button>Cancelar</button>
+                    <button type="submit" class="button_azul">Guardar</button>
+                    <button class="button_transparente">Cancelar</button>
                 </div>
             </section>
 
